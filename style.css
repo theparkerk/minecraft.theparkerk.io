@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #8B8B8B;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.minecraft-text {
+    text-shadow: 2px 2px #3F3F3F;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.server-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.copy-button, .minecraft-button {
+    font-family: 'VT323', monospace;
+    background-color: #5B5B5B;
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover, .minecraft-button:hover {
+    background-color: #7B7B7B;
+}
+
+.instructions {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+@keyframes minecraft-hover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.minecraft-button:hover {
+    animation: minecraft-hover 0.5s infinite;
+}
